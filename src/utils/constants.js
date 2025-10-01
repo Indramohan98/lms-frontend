@@ -1,6 +1,6 @@
 // API Configuration
 export const API_BASE_URL =
-  import.meta.REACT_APP_API_URL || "http://localhost:8000/api";
+  import.meta.VITE_API_URL || "http://localhost:8000/api";
 
 // User roles
 export const USER_ROLES = {
