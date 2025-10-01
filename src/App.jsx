@@ -22,6 +22,7 @@ import StudentEnrollments from './components/enrollment/StudentEnrollments.jsx';
 // Instructor Components
 import InstructorCourses from './components/instructor/InstructorCourses.jsx'
 import CourseStudents from './components/instructor/CourseStudents.jsx'
+import { API_BASE_URL } from './utils/constants.js';
 
 // Main App Component
 const AppContent = () => {
@@ -32,6 +33,8 @@ const AppContent = () => {
   const [refreshKey, setRefreshKey] = useState(0);
   const { user, loading } = useAuth();
   const [viewMode, setViewMode] = useState(null);
+
+  console.log('API_BASE_URL:', API_BASE_URL);
 
   // Show loading spinner while checking authentication
   if (loading) {
