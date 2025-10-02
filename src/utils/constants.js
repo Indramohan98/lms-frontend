@@ -1,6 +1,10 @@
 // API Configuration
 export const API_BASE_URL = import.meta.VITE_API_URL;
 
+
+console.log('Environment variable VITE_API_URL in constants:', import.meta.env.VITE_API_URL);
+console.log('Final API_BASE_URL constants:', API_BASE_URL);
+
 // User roles
 export const USER_ROLES = {
   ADMIN: 'admin',
