@@ -34,9 +34,6 @@ const AppContent = () => {
   const { user, loading } = useAuth();
   const [viewMode, setViewMode] = useState(null);
 
- console.log('API_BASE_URL in App:', API_BASE_URL);
- console.log('All env variables:', import.meta.env);
-
   // Show loading spinner while checking authentication
   if (loading) {
     return (

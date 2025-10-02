@@ -21,7 +21,6 @@ const CourseForm = ({ course, onClose, onSave }) => {
 
     setLoading(true);
     setError('');
-    console.log("formData", formData)
     try {
       const response = course 
         ? await courseAPI.update(course.id, formData)
